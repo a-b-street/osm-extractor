@@ -1,0 +1,17 @@
+{
+  "name": "osm-extractor",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "server": "node server.js",
+    "fmt": "npx prettier --write ."
+  },
+  "dependencies": {
+    "@turf/area": "^7.3.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
