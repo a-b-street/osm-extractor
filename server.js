@@ -6,15 +6,17 @@ import { promisify } from "node:util";
 import os from "os";
 import path from "path";
 import turfArea from "@turf/area";
+import cors from "cors";
 
 const app = express();
+app.use(cors());
 // TODO Input polygon should be way smaller
 app.use(express.json({ limit: "1mb" }));
 
 const PORT = 3000;
 const LOGFILE = "requests.log";
 const MAX_AREA_M2 = 5 * 10e7;
-const INPUT_GOL = "/Users/dabreegster/Downloads/england.gol";
+const INPUT_GOL = "/Users/dabreegster/Downloads/london.gol";
 const OSMIUM = "/opt/homebrew/bin/osmium";
 const GOL = "/Users/dabreegster/Downloads/gol";
 
