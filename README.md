@@ -31,7 +31,7 @@ curl http://localhost:3000 \
 
 You need a GOL v2 file to source the data. You can get a planet-wide one from
 https://openplanetdata.com/ or build one from smaller OSM extracts using
-https://docs.geodesk.com/gol/build.
+https://docs.geodesk.com/gol/build (making sure to pass `--waynode-ids`).
 
 Edit the constants at the top of `server.js` as needed, then `npm run server`.
 
